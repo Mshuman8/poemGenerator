@@ -7,7 +7,7 @@
     <body>
         <div class="intro">
             <h1>Poem Generator</h1>
-            <p>Description of our website........</p>    
+            <h2>Enter a word. Receive a splendiferous, 2-line, 4-word rhyming poem.</h2>    
         </div>
         <div class="container">
             <div class="request">
@@ -25,10 +25,10 @@
             <div class="poem">
                 <div class="card pink accent-4">
                     <div class="card-content white-text">
-                        {% if input_word and output_word %}
-                        {{ input_word }}
+                        {% if line1 and line2 %}
+                        {{ line1 }}
                         <br>
-                        {{ output_word }}
+                        {{ line2 }}
                         {% endif %}
                     </div>
                 </div>
